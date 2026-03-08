@@ -9,82 +9,13 @@ import Layout from "../layouts/Layout.astro";
   <section class="bg-gray-50 py-20 px-4 md:px-8 max-w-7xl mx-auto">
     <!-- En-tête de la section -->
     <div class="text-center mb-16">
-      <BigTitle className="mt-8"> L'application Mindlet est maintenant disponible en beta ! </BigTitle>
+      <BigTitle className="mt-8"> Mindlet est en phase de maintenance </BigTitle>
       <div class="w-full max-w-3xl mx-auto">
         <div class="h-1 w-48 bg-emerald-500 mx-auto rounded-full"></div>
       </div>
       <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
-        Découvrez dès maintenant Mindlet en version beta et rejoignez notre communauté de testeurs !
+        Suite aux retours de la beta, nous ajustons et améliorons l'application pour préparer le lancement officiel en mai 2026.
       </p>
-    </div>
-
-    <!-- Section de téléchargement beta -->
-    <div class="mt-10 max-w-4xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Android - Play Store -->
-        <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 flex flex-col h-full">
-          <div class="text-center flex-grow flex flex-col">
-            <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Android</h3>
-            <p class="text-gray-600 mb-6 flex-grow">Téléchargez la version beta depuis le Google Play Store</p>
-            <a 
-              href="https://play.google.com/store/apps/details?id=app.mindlet.mobile&pcampaignid=web_share"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors mt-auto"
-            >
-              <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
-              </svg>
-              Télécharger sur Play Store
-            </a>
-          </div>
-        </div>
-
-        <!-- iOS - TestFlight -->
-        <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 flex flex-col h-full">
-          <div class="text-center flex-grow flex flex-col">
-            <div class="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">iOS</h3>
-            <p class="text-gray-600 mb-6 flex-grow">Rejoignez le programme beta via TestFlight</p>
-            <a 
-              href="https://testflight.apple.com/join/wQwPs1aZ"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors mt-auto"
-            >
-              <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
-              </svg>
-              Rejoindre TestFlight
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Note importante pour iOS -->
-      <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-        <div class="flex items-start">
-          <svg class="w-6 h-6 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          <div>
-            <h4 class="text-lg font-medium text-blue-800 mb-2">Pour les utilisateurs iOS</h4>
-            <p class="text-blue-700">
-              TestFlight est l'application officielle d'Apple pour tester les applications en version beta. 
-              Vous devez d'abord installer TestFlight depuis l'App Store, puis utiliser le lien ci-dessus pour rejoindre notre programme de test beta.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Points de progression -->
@@ -142,31 +73,53 @@ import Layout from "../layouts/Layout.astro";
             <p class="mt-2 text-sm font-medium text-gray-700">Développement</p>
           </div>
 
-          <!-- Étape 3 - En cours (Beta) -->
+          <!-- Étape 3 - Terminée (Beta) -->
+          <div class="relative z-10 text-center">
+            <div
+              class="w-10 h-10 bg-emerald-500 rounded-full mx-auto flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <p class="mt-2 text-sm font-medium text-gray-700">Test Beta</p>
+          </div>
+
+          <!-- Étape 4 - En cours (Maintenance) -->
           <div class="relative z-10 text-center">
             <div
               class="w-10 h-10 bg-emerald-100 border-2 border-emerald-500 rounded-full mx-auto flex items-center justify-center"
             >
               <span class="bg-emerald-500 animate-pulse w-5 h-5 rounded-full"></span>
             </div>
-            <p class="mt-2 text-sm font-medium text-emerald-600">Test Beta</p>
+            <p class="mt-2 text-sm font-medium text-emerald-600">Maintenance</p>
           </div>
 
-          <!-- Étape 4 - À venir -->
+          <!-- Étape 5 - À venir (Lancement) -->
           <div class="relative z-10 text-center">
             <div
               class="w-10 h-10 bg-gray-100 rounded-full mx-auto flex items-center justify-center"
             >
-              <span class="text-gray-400 font-medium">4</span>
+              <span class="text-gray-400 font-medium">5</span>
             </div>
-            <p class="mt-2 text-sm font-medium text-gray-400">Lancement final</p>
+            <p class="mt-2 text-sm font-medium text-gray-400">Lancement</p>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-10">
-        <p class="text-emerald-600 font-medium">Version beta disponible maintenant !</p>
-        <p class="text-gray-600 text-sm mt-2">Lancement final prévu pour début 2026</p>
+        <p class="text-emerald-600 font-medium">Phase de maintenance et ajustements en cours</p>
+        <p class="text-gray-600 text-sm mt-2">Nous intégrons les retours de la beta pour peaufiner l'application. Lancement officiel prévu en mai 2026.</p>
       </div>
     </div>
 
