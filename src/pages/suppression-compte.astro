@@ -1,0 +1,337 @@
+---
+import BigTitle from "../components/ui/BigTitle";
+import { Card } from "../components/ui/Card";
+import HintText from "../components/ui/HintText";
+import Paragraph from "../components/ui/Paragraph";
+import SmallTitle from "../components/ui/SmallTitle";
+import Title from "../components/ui/Title";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="lg:w-6xl mx-auto my-8 pt-20 pb-8 px-4 md:px-8">
+    <!-- En-tête -->
+    <header class="py-12 text-center">
+      <BigTitle>Suppression de compte Mindlet</BigTitle>
+      <Paragraph className="text-lg max-w-4xl mx-auto">
+        Conformément aux exigences du Google Play Store, de l'Apple App Store et du RGPD, vous pouvez
+        demander la suppression de votre compte Mindlet et des données associées à tout moment.
+      </Paragraph>
+    </header>
+
+    <!-- Section Procédure -->
+    <section class="py-12">
+      <Title>Comment demander la suppression de votre compte ?</Title>
+      <Paragraph className="mt-6">
+        Vous pouvez demander la suppression de votre compte Mindlet de deux manières :
+      </Paragraph>
+
+      <div class="mt-12 gap-12 grid md:grid-cols-2">
+        <Card>
+          <SmallTitle>Depuis l'application</SmallTitle>
+          <Paragraph>
+            Suivez ces étapes directement dans l'application Mindlet :
+          </Paragraph>
+          <ol class="mt-4 space-y-3 text-gray-700 list-decimal list-inside">
+            <li>Ouvrez l'application <strong>Mindlet</strong></li>
+            <li>Accédez à <strong>Paramètres</strong> (icône engrenage)</li>
+            <li>Sélectionnez <strong>Mon compte</strong></li>
+            <li>Appuyez sur <strong>Supprimer mon compte</strong></li>
+            <li>Confirmez votre identité en saisissant votre mot de passe</li>
+            <li>Validez la suppression définitive</li>
+          </ol>
+        </Card>
+
+        <Card>
+          <SmallTitle>Via ce formulaire web</SmallTitle>
+          <Paragraph>
+            Si vous ne pouvez plus accéder à l'application, utilisez le formulaire ci-dessous pour
+            soumettre votre demande de suppression. Aucune réinstallation de l'application n'est
+            nécessaire.
+          </Paragraph>
+          <HintText className="mt-4">
+            Nous vérifierons votre identité par email avant de procéder à la suppression.
+          </HintText>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Section Données supprimées / conservées -->
+    <section class="py-12">
+      <Title>Données supprimées et données conservées</Title>
+      <Paragraph className="mt-6">
+        Lors de la suppression de votre compte, les données suivantes sont traitées de la manière
+        indiquée ci-dessous :
+      </Paragraph>
+
+      <div class="mt-12 gap-12 grid md:grid-cols-2">
+        <Card>
+          <SmallTitle>Données supprimées définitivement</SmallTitle>
+          <ul class="mt-4 space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Informations personnelles</strong> : nom, prénom, adresse email, photo de profil</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Données d'authentification</strong> : identifiants de connexion, mot de passe chiffré, tokens</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Contenu utilisateur</strong> : flashcards, quiz, notes, collections créées</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Historique d'apprentissage</strong> : progression, scores, statistiques</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Données sociales</strong> : abonnements, amis, messages privés</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold mt-0.5">&#10005;</span>
+              <span><strong>Préférences et paramètres</strong> : langue, notifications, thème</span>
+            </li>
+          </ul>
+        </Card>
+
+        <Card>
+          <SmallTitle>Données conservées temporairement</SmallTitle>
+          <ul class="mt-4 space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold mt-0.5">&#9888;</span>
+              <span>
+                <strong>Journaux de sécurité</strong> : conservés pendant <strong>90 jours</strong> après
+                la suppression, pour la prévention des fraudes et la sécurité de la plateforme
+                (obligation légale).
+              </span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold mt-0.5">&#9888;</span>
+              <span>
+                <strong>Données de facturation</strong> : conservées pendant <strong>10 ans</strong>
+                conformément aux obligations comptables et fiscales françaises (Code de commerce,
+                art. L123-22).
+              </span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-500 font-bold mt-0.5">&#9888;</span>
+              <span>
+                <strong>Données anonymisées</strong> : les données statistiques agrégées et anonymisées
+                (ne permettant plus de vous identifier) peuvent être conservées à des fins
+                d'amélioration du service.
+              </span>
+            </li>
+          </ul>
+          <HintText className="mt-6">
+            Ces conservations sont conformes au RGPD (articles 6 et 17) et aux législations françaises
+            et européennes en vigueur.
+          </HintText>
+        </Card>
+      </div>
+    </section>
+
+    <!-- Section Abonnements -->
+    <section class="py-12">
+      <Title>Abonnements actifs</Title>
+      <div class="mt-8 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <Paragraph>
+          <strong>Important :</strong> la suppression de votre compte Mindlet <strong>n'annule pas
+          automatiquement</strong> vos abonnements en cours souscrits via l'App Store (Apple) ou le
+          Google Play Store. Pour éviter toute facturation ultérieure, vous devez annuler vos
+          abonnements directement depuis :
+        </Paragraph>
+        <ul class="mt-4 space-y-2 text-gray-700">
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#8226;</span>
+            <span><strong>iPhone / iPad</strong> : Réglages &gt; votre nom &gt; Abonnements</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#8226;</span>
+            <span><strong>Android</strong> : Google Play Store &gt; Menu &gt; Abonnements</span>
+          </li>
+        </ul>
+        <HintText className="mt-4">
+          Annulez vos abonnements <strong>avant</strong> de demander la suppression de votre compte.
+        </HintText>
+      </div>
+    </section>
+
+    <!-- Section Délais -->
+    <section class="py-12">
+      <Title>Délais de traitement</Title>
+      <div class="mt-8 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <ul class="space-y-4 text-gray-700">
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#10003;</span>
+            <span>
+              <strong>Demande via l'application</strong> : votre compte est désactivé immédiatement. Les
+              données sont supprimées définitivement sous <strong>30 jours</strong>.
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#10003;</span>
+            <span>
+              <strong>Demande via le formulaire web</strong> : nous traitons votre demande sous
+              <strong>30 jours maximum</strong> conformément au RGPD (article 17).
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#10003;</span>
+            <span>
+              <strong>Période de grâce</strong> : pendant les <strong>14 premiers jours</strong> suivant
+              votre demande, vous pouvez annuler la suppression en vous reconnectant à votre compte.
+              Passé ce délai, la suppression est irréversible.
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary font-bold">&#10003;</span>
+            <span>
+              <strong>Confirmation</strong> : vous recevrez un email de confirmation lorsque la
+              suppression de vos données sera effective.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formulaire de demande -->
+    <section class="py-12">
+      <Title>Formulaire de demande de suppression</Title>
+      <Paragraph className="mt-6">
+        Remplissez ce formulaire pour demander la suppression de votre compte Mindlet. Nous vous
+        enverrons un email de vérification avant de procéder.
+      </Paragraph>
+
+      <div class="mt-8 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <form class="mt-2 space-y-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">
+              Adresse email associée à votre compte Mindlet *
+            </label>
+            <input
+              type="email"
+              required
+              placeholder="votre@email.com"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">
+              Nom d'utilisateur Mindlet (optionnel)
+            </label>
+            <input
+              type="text"
+              placeholder="@votre_pseudo"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">
+              Raison de la suppression (optionnel)
+            </label>
+            <select
+              class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+            >
+              <option value="">Sélectionnez une raison</option>
+              <option>Je n'utilise plus l'application</option>
+              <option>Je souhaite protéger mes données personnelles</option>
+              <option>J'ai créé un autre compte</option>
+              <option>Je ne suis pas satisfait(e) du service</option>
+              <option>Autre raison</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">
+              Commentaire supplémentaire (optionnel)
+            </label>
+            <textarea
+              rows="3"
+              placeholder="Précisez votre demande si nécessaire..."
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            ></textarea>
+          </div>
+
+          <div class="flex items-start gap-2">
+            <input
+              type="checkbox"
+              required
+              class="mt-1 checkbox checkbox-sm checkbox-primary"
+            />
+            <label class="text-sm text-gray-700">
+              Je comprends que la suppression de mon compte est <strong>irréversible</strong> après la
+              période de grâce de 14 jours et que toutes mes données personnelles seront définitivement
+              effacées. *
+            </label>
+          </div>
+
+          <div class="flex items-start gap-2">
+            <input
+              type="checkbox"
+              required
+              class="mt-1 checkbox checkbox-sm checkbox-primary"
+            />
+            <label class="text-sm text-gray-700">
+              J'ai bien pris connaissance des <strong>types de données supprimées et conservées</strong>
+              décrits sur cette page. *
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
+          >
+            Demander la suppression de mon compte
+          </button>
+
+          <HintText>
+            * Champs obligatoires. Un email de vérification vous sera envoyé pour confirmer votre
+            identité avant toute suppression.
+          </HintText>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="py-12">
+      <Title>Besoin d'aide ?</Title>
+      <Paragraph className="mt-6">
+        Si vous avez des questions concernant la suppression de votre compte ou le traitement de vos
+        données personnelles, contactez-nous :
+      </Paragraph>
+
+      <div class="mt-8 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <SmallTitle>Contact</SmallTitle>
+        <Paragraph>
+          <strong>Email :</strong>
+          <a href="mailto:support@mindlet.app" class="text-primary underline">support@mindlet.app</a
+          ><br />
+          <strong>Délai de réponse :</strong> 48h maximum (jours ouvrés)
+        </Paragraph>
+        <HintText className="mt-4">
+          Conformément au RGPD (article 77), vous disposez du droit d'introduire une réclamation auprès
+          de la <a
+            href="https://www.cnil.fr/fr/plaintes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary underline">CNIL</a
+          > si vous estimez que le traitement de vos données ne respecte pas la réglementation en
+          vigueur.
+        </HintText>
+      </div>
+    </section>
+
+    <!-- Lien politique de confidentialité -->
+    <section class="py-8 text-center">
+      <Paragraph>
+        Pour plus d'informations sur le traitement de vos données, consultez notre
+        <a href="/politique-de-confidentialite" class="text-primary underline">
+          politique de confidentialité</a
+        >.
+      </Paragraph>
+    </section>
+  </div>
+</Layout>
